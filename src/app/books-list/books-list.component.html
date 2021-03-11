@@ -1,0 +1,7 @@
+<h1>Books List</h1>
+<div *ngFor="let book of books">
+    <app-book-item 
+    [book]="book"
+    [image]="book.image"
+    ></app-book-item>
+</div>
