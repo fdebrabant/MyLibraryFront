@@ -19,4 +19,12 @@ export default class BooksService {
     };
     return $books.pipe(map(treatment));
   }
+
+  public getBookById(id: number): Observable<object> {
+    const $booksById: Observable<any> = this._service.get('http://localhost:8080/api/books/'+id);
+    const treatment = (param_data: any[]) => {
+      return param_data as object;
+    };
+    return $booksById.pipe(map(treatment));
+  }
 };

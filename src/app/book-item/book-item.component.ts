@@ -16,8 +16,6 @@ export class BookItemComponent implements OnInit {
 
   ngOnInit(): void {
     this.imageUrl = `http://localhost:8080${this.image}`
-    console.log(this.image)
-    console.log(this.imageUrl)
   }
 
 }

@@ -64,15 +64,11 @@
     alt="Angular Logo"
     src="../assets/img/bx_bx-book-reader.svg"
   />
-  <span>Welcome</span>
+  <span>My Library</span>
     <div class="spacer"></div>
+    <a [routerLink]="['/books']">Books</a>
 </div>
 
-<div class="content" role="main">
-
-<app-books-list></app-books-list>
+<div class="content" role="main">  
+  <router-outlet></router-outlet>
 </div>
-
-
-
-<router-outlet></router-outlet>

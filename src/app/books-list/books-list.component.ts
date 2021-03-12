@@ -17,7 +17,6 @@ export class BooksListComponent implements OnInit, OnDestroy {
     this.serviceSubscription = this.bookService.getBooks().subscribe(
       (param: any) => {
           this.books  =  param;
-          console.log(this.books)
       },
       (error :any) => {
         console.log(`une erreur a été rencontrée ${error}`)
